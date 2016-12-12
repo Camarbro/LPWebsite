@@ -12,3 +12,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
+
+for (var i = 0; i < array.length; i++) {
+  
+}

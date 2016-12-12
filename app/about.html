@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="static/icons/material-design/iconfont/material-icons.css">
+  <link type="text/css" rel="stylesheet" href="static/css/materialize/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/calendar/fullcalendar.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.colors.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.footer.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.icons.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.images.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.navbar.css" media="screen,project"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.parallax.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.widgets.css" media="screen,projection"/>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="pfea-white">
+  <div class="nav-wrapper container">
+    <!-- Navbar -->
+    <a href="" class="brand-logo"><img class="logo small" src="static/images/pfea_logo-2.png"></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#!view1">Inicio</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="quienes-somos-dropdown">
+          Quiénes somos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="programas-dropdown">
+          Programas
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li><a href="">Eventos</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="apoyanos-dropdown">
+          Apóyanos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- SideNav -->
+    <ul class="side-nav" id="mobile-demo">
+      <!-- Inicio -->
+      <li><a href="">Inicio</a></li>
+      <!-- Quienes somos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Quiénes somos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!/view2">Misión, Visión y Principios</a></li>
+            <li><a href="">Mensaje de la Dirección</a></li>
+            <li><a href="">Logros</a></li>
+            <li><a href="">Reconocimientos y Certificaciones</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Proramas -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Programas
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Restaurantes Amigos del Mar</a></li>
+            <li><a href="">Tijuana Waterkeeper</a></li>
+            <li><a href="">Corredores Ecológicos</a></li>
+              <li><a href="">Salvemos la Playa</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Eventos -->
+      <li><a href="">Eventos</a></li>
+      <!-- Apoyanos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Apóyanos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Donativos</a></li>
+            <li><a href="">Voluntarios</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul id="quienes-somos-dropdown" class="dropdown-content">
+  <li><a href="">Misión, Visión y Principios</a></li>
+  <li><a href="">Mensaje de la Dirección</a></li>
+  <li><a href="">Logros</a></li>
+  <li><a href="">Reconocimientos y Certificaciones</a></li>
+</ul>
+
+<ul id="programas-dropdown" class="dropdown-content">
+  <li><a href="">Restaurantes Amigos del Mar</a></li>
+  <li><a href="">Tijuana Waterkeeper</a></li>
+  <li><a href="">Corredores Ecológicos</a></li>
+    <li><a href="">Salvemos la Playa</a></li>
+</ul>
+
+<ul id="apoyanos-dropdown" class="dropdown-content">
+  <li><a href="">Donativos</a></li>
+  <li><a href="">Voluntarios</a></li>
+</ul>
+<div class="parallax-container custom no-margin">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/Arroyo-Alamar-02.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="text-container small valign-wrapper">
+                        <h3 class="center-block center">Misión, Visión y Principios</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-green"></div>
+</div>
+
+<div class="parallax-container custom">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/Playas-Tijuana-01.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6"></div>
+                <div class="col s12 m6 l6">
+                    <div class="text-container medium">
+                        <p class="title">Misión</p>
+                        <p class="content">Trabajar para proteger el océano, arroyos y costas de nuestra cuenca.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-orange"></div>
+</div>
+
+<div class="parallax-container custom">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/Arroyo-Alamar-01.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="text-container medium">
+                        <p class="title">Visión</p>
+                        <p class="content">Una cuenca costera conectada por ríos vivos y protegida por una comunidad que participa en el rescate de su patrimonio hídrico.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title right-align pfea-green"></div>
+</div>
+
+<div class="parallax-container custom">
+    <div class="parallax-title center pfea-blue">
+        <p>Principios</p>
+    </div>
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/LasPlayasSunset.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="text-container small center">
+                        <p class="title">Predicamos con el ejemplo</p>
+                        <p class="content">Lo que decimos, lo hacemos y podemos demostrarlo.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="text-container small center">
+                        <p class="title">Trabajamos y actuamos en comunidad</p>
+                        <p class="content">Propiciamos la colaboración incluyente, el diálogo transparente, el consenso y la corresponsabilidad.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="text-container small center">
+                        <p class="title">Enfoque de cuenca como base</p>
+                        <p class="content">Actuamos localmente para rescatar el patrimonio hídrico global.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="text-container small center">
+                        <p class="title">Ciencia y hechos son el fundamento</p>
+                        <p class="content">Fundamentamos nuestras opiniones en datos científicos y oficiales, y dentro de un marco de la cultura de la legalidad.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <div class="text-container small center">
+                        <p class="title">Natura y cultura son una</p>
+                        <p class="content">Creemos que las fronteras son artificiales ya que las comunidades naturales y humanas están interconectadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title right-align pfea-blue"></div>
+</div>
+
+
+  <footer class="page-footer pfea-blue white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4 center">
+          <img src="static/images/pfea_wh.png">
+        </div>
+        <div class="col s12 m4 l4">
+          <form action="" method="GET">
+            <div class="input-field">
+              <input placeholder="Nombre" type="text">
+            </div>
+            <div class="input-field">
+              <input placeholder="Correo electrónico" type="text">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Mensaje" class="materialize-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn col s12 white black-text">Enviar</button>
+          </form>
+        </div>
+        <div class="col s12 m4 l4">
+          <p><i class="material-icons medium">place</i> Volcán # 632, Secc. Monumental, Playas de Tijuana, Tijuana, B.C., México</p>
+          <p><i class="material-icons medium">phone</i> Tel. (664) 630.05.90 | info@pfea.org</p>
+          <p><i class="material-icons medium">mail</i> info@pfea.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 PFEA A.C.
+      </div>
+    </div>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+  <script type="text/javascript" src="static/js/pfea-script.js"></script>
+  <script type="text/javascript" src="static/js/moment.min.js"></script>
+  <script type="text/javascript" src="static/js/fullcalendar.js"></script>
+  <script type="text/javascript" src="static/js/gcal.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

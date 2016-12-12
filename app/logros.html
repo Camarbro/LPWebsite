@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="static/icons/material-design/iconfont/material-icons.css">
+  <link type="text/css" rel="stylesheet" href="static/css/materialize/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/calendar/fullcalendar.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.colors.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.footer.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.icons.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.images.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.navbar.css" media="screen,project"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.parallax.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.widgets.css" media="screen,projection"/>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="pfea-white">
+  <div class="nav-wrapper container">
+    <!-- Navbar -->
+    <a href="" class="brand-logo"><img class="logo small" src="static/images/pfea_logo-2.png"></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#!view1">Inicio</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="quienes-somos-dropdown">
+          Quiénes somos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="programas-dropdown">
+          Programas
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li><a href="">Eventos</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="apoyanos-dropdown">
+          Apóyanos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- SideNav -->
+    <ul class="side-nav" id="mobile-demo">
+      <!-- Inicio -->
+      <li><a href="">Inicio</a></li>
+      <!-- Quienes somos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Quiénes somos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!/view2">Misión, Visión y Principios</a></li>
+            <li><a href="">Mensaje de la Dirección</a></li>
+            <li><a href="">Logros</a></li>
+            <li><a href="">Reconocimientos y Certificaciones</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Proramas -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Programas
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Restaurantes Amigos del Mar</a></li>
+            <li><a href="">Tijuana Waterkeeper</a></li>
+            <li><a href="">Corredores Ecológicos</a></li>
+              <li><a href="">Salvemos la Playa</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Eventos -->
+      <li><a href="">Eventos</a></li>
+      <!-- Apoyanos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Apóyanos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Donativos</a></li>
+            <li><a href="">Voluntarios</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul id="quienes-somos-dropdown" class="dropdown-content">
+  <li><a href="">Misión, Visión y Principios</a></li>
+  <li><a href="">Mensaje de la Dirección</a></li>
+  <li><a href="">Logros</a></li>
+  <li><a href="">Reconocimientos y Certificaciones</a></li>
+</ul>
+
+<ul id="programas-dropdown" class="dropdown-content">
+  <li><a href="">Restaurantes Amigos del Mar</a></li>
+  <li><a href="">Tijuana Waterkeeper</a></li>
+  <li><a href="">Corredores Ecológicos</a></li>
+    <li><a href="">Salvemos la Playa</a></li>
+</ul>
+
+<ul id="apoyanos-dropdown" class="dropdown-content">
+  <li><a href="">Donativos</a></li>
+  <li><a href="">Voluntarios</a></li>
+</ul>
+<div class="parallax-container custom no-margin">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/margarita-02.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="text-container small valign-wrapper">
+                        <h3 class="center-block center">Logros</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-green"></div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h3>Lo que hicimos</h3>
+            <div class="divider"></div>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Incidimos en la normatividad federal para lograr que pudieran ser donatarias autorizadas las organizaciones ambientalistas dedicadas a otros temas aparte de la conservación de especies.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Formamos a una nueva generación  de líderes jóvenes ambientalistas en Tijuana.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Produjimos un currículo inédito especializado en los ecosistemas costeros de esta cuenca para impartir talleres de educación ambiental. </p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Fuimos promoventes pioneros del derecho a la información ambiental incidiendo en la normatividad federal y del estado y municipios de B.C.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Organizamos primera iniciativa ciudadana de vinculación entre mas de 1,500 ambientalistas de los 10 estados fronterizos de ambos lados de la frontera para hablar sobre temas ambientales.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Logramos la movilización de mas de 45,000 voluntarios para la limpieza y cuidado de las playas, arroyos y cañadas a escala estatal y remoción 220 toneladas a lo largo de 15 años.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Conducimos el primero y único  programa de monitoreo de cumplimiento de los gobiernos municipales y del estado con sus obligaciones de transparencia de información pública.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Operamos el primer laboratorio ciudadano de Baja California que genera avisos sistemáticos al público sobre la seguridad de la calidad de las aguas costeras para uso recreativo.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Somos líderes en el rescate de 35 ha. de ecosistema ripario del Arroyo Alamar y el Parque de Conservación Cañada de los Sauces.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Ayudamos a preservar el hábitat de especies en peligro de extinción y amenazadas, como son el pelícano café, el lobo marino y el delfín y otras que transitan frente a nuestras costas.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h3>Lo que hacemos</h3>
+            <div class="divider"></div>
+        </div>
+        <div class="col s6 m6 l6">
+            <h5>Visitante de la playa</h5>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Te informamos semanalmente sobre la calidad del agua de la playa, para uso recreativo.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Patrullamos la playa continuamente para advertir alguna anomalía ambiental.</p>
+        </div>
+        <div class="col s6 m3 l6">
+            <h5>Jóven</h5>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te capacitamos como líder ambiental juvenil de tu escuela y tu colonia.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te capacitamos como capitán de sitio para las campañas de limpieza “Salvemos la Playa”.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te ofrecemos un espacio de aprendizaje donde liberar tus horas de servicio social.</p>
+        </div>
+        <div class="col s6 m6 l6">
+            <h5>Vecinos, líderes comunitarios, maestros</h5>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te asesoramos en tus gestiones por preservar ecosistemas y biodiversidad bajo amenaza.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te enseñamos sobre el valor de las especies y el ecosistema costero y ribereño que nos rodea.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Te hacemos llegar información ambiental relevante, interesante y de manera constante.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Representamos tus inquietudes y propuestas en los Comités ciudadanos que se encargan de garantizar que se respeten tus derechos a un ambiente sano.</p>
+        </div>
+        <div class="col s6 m6 l6">
+            <h5>Dueño y cliente de restaurantes</h5>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Te otorgamos una certificación como Restaurante Amigo Del Mar.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Te enteramos de los graves impactos que ocasionan los plásticos desechables en el océano y las alternativas para prevenirlos.</p>
+        </div>
+    </div>
+</div>
+
+  <footer class="page-footer pfea-blue white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4 center">
+          <img src="static/images/pfea_wh.png">
+        </div>
+        <div class="col s12 m4 l4">
+          <form action="" method="GET">
+            <div class="input-field">
+              <input placeholder="Nombre" type="text">
+            </div>
+            <div class="input-field">
+              <input placeholder="Correo electrónico" type="text">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Mensaje" class="materialize-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn col s12 white black-text">Enviar</button>
+          </form>
+        </div>
+        <div class="col s12 m4 l4">
+          <p><i class="material-icons medium">place</i> Volcán # 632, Secc. Monumental, Playas de Tijuana, Tijuana, B.C., México</p>
+          <p><i class="material-icons medium">phone</i> Tel. (664) 630.05.90 | info@pfea.org</p>
+          <p><i class="material-icons medium">mail</i> info@pfea.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 PFEA A.C.
+      </div>
+    </div>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+  <script type="text/javascript" src="static/js/pfea-script.js"></script>
+  <script type="text/javascript" src="static/js/moment.min.js"></script>
+  <script type="text/javascript" src="static/js/fullcalendar.js"></script>
+  <script type="text/javascript" src="static/js/gcal.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

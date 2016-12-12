@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="static/icons/material-design/iconfont/material-icons.css">
+  <link type="text/css" rel="stylesheet" href="static/css/materialize/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/calendar/fullcalendar.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.colors.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.footer.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.icons.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.images.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.navbar.css" media="screen,project"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.parallax.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.widgets.css" media="screen,projection"/>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="pfea-white">
+  <div class="nav-wrapper container">
+    <!-- Navbar -->
+    <a href="" class="brand-logo"><img class="logo small" src="static/images/pfea_logo-2.png"></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#!view1">Inicio</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="quienes-somos-dropdown">
+          Quiénes somos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="programas-dropdown">
+          Programas
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li><a href="">Eventos</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="apoyanos-dropdown">
+          Apóyanos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- SideNav -->
+    <ul class="side-nav" id="mobile-demo">
+      <!-- Inicio -->
+      <li><a href="">Inicio</a></li>
+      <!-- Quienes somos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Quiénes somos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="#!/view2">Misión, Visión y Principios</a></li>
+            <li><a href="">Mensaje de la Dirección</a></li>
+            <li><a href="">Logros</a></li>
+            <li><a href="">Reconocimientos y Certificaciones</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Proramas -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Programas
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Restaurantes Amigos del Mar</a></li>
+            <li><a href="">Tijuana Waterkeeper</a></li>
+            <li><a href="">Corredores Ecológicos</a></li>
+              <li><a href="">Salvemos la Playa</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Eventos -->
+      <li><a href="">Eventos</a></li>
+      <!-- Apoyanos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Apóyanos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Donativos</a></li>
+            <li><a href="">Voluntarios</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul id="quienes-somos-dropdown" class="dropdown-content">
+  <li><a href="">Misión, Visión y Principios</a></li>
+  <li><a href="">Mensaje de la Dirección</a></li>
+  <li><a href="">Logros</a></li>
+  <li><a href="">Reconocimientos y Certificaciones</a></li>
+</ul>
+
+<ul id="programas-dropdown" class="dropdown-content">
+  <li><a href="">Restaurantes Amigos del Mar</a></li>
+  <li><a href="">Tijuana Waterkeeper</a></li>
+  <li><a href="">Corredores Ecológicos</a></li>
+    <li><a href="">Salvemos la Playa</a></li>
+</ul>
+
+<ul id="apoyanos-dropdown" class="dropdown-content">
+  <li><a href="">Donativos</a></li>
+  <li><a href="">Voluntarios</a></li>
+</ul>
+<div class="parallax-container custom no-margin">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/Fondo3.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="text-container small valign-wrapper">
+                        <h3 class="center-block center">Mensaje de la Dirección</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-blue"></div>
+</div>
+
+<div class="container just text-justified" style="padding: 30px 0;">
+    <div class="row">
+        <div class="col s4 m4 l4">
+            <img class="logo mid" src="static/images/margarita.jpeg" style="width: 100%; min-height: 450px;">
+        </div>
+        <div class="col s8 m8 l8">
+            <p>Es para mi un gusto el poder presentar ante ustedes este nuevo espacio de intercomunicación, con el que se pretende mostrar lo que ha sido a lo largo de 23 años el camino recorrido por Proyecto Fronterizo de Educación Ambiental A.C. (PFEA), un camino que refleja la historia y esfuerzo de un grupo de profesionales comprometidos, que hicieron de una idea una realidad, y compartirles día a día lo que hacemos e invitarlos a sumarse a nuestra visión del futuro.</p>
+            <p>Siempre he creído que la mayor riqueza del individuo son los sueños que anhelamos alcanzar. Mi sueño personal es que todos podamos disfrutar de nuestra playa, un lugar mágico y punto de encuentro, hoy y mañana, como lo hice de niña, creciendo en una comunidad costera. Como Directora de PFEA, mi sueño es ver una Tijuana con sus rìos llenos de vida y su costa vibrante y sana. En este sentido, el mayor desafìo ha sido lograr que nuestra comunidad reconozca, primeramente, que vivimos en una ciudad ribereña y costera, y luego, que es el deber de todos preservar y proteger la riqueza que se encuentra en nuestros arroyos y costas. La protecciòn de servicios ambientales que estas fuentes de vida brindan al espacio que habitamos, es un paso fundamental para que sus habitantes gocen de calidad de vida y Tijuana se realice en todos los demás aspectos.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <p>Quizás debido a este reto, la trayectoria de Proyecto Fronterizo haya resultado ser una aventura tan emocionante y rica en enseñanzas tanto de formaciòn ciudadana como de conocimiento ambiental; una verdadera escuela sobre las formas de incidir en la política e influir positivamente en las conductas de la comunidad a la que servimos. He tenido la gran fortuna de contar con un equipo de trabajo de verdaderos guerreros atrevidos, talentosos, incansables y comprometidos. También es un honor y privilegio trabajar bajo la guía y amparo de un Consejo Directivo constituido por colegas profesionistas que comparten las aspiraciones y pasión de Proyecto Fronterizo y estàn incondicionalmente a nuestra disposiciòn, asesorando y asegurando la rectitud de nuestro rumbo.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <p class="no-margin">Confío que este sueño es posible porque a lo largo de este camino veo cómo mucha gente, particularmente los jóvenes, se une a esta causa y acciona por sí misma, colaborando entre sí y con la naturaleza que los rodea. Estoy segura de que ésto es la base para el cambio que se requiere para transitar hacia un mundo mejor.</p>
+        </div>
+    </div>
+</div>
+
+  <footer class="page-footer pfea-blue white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4 center">
+          <img src="static/images/pfea_wh.png">
+        </div>
+        <div class="col s12 m4 l4">
+          <form action="" method="GET">
+            <div class="input-field">
+              <input placeholder="Nombre" type="text">
+            </div>
+            <div class="input-field">
+              <input placeholder="Correo electrónico" type="text">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Mensaje" class="materialize-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn col s12 white black-text">Enviar</button>
+          </form>
+        </div>
+        <div class="col s12 m4 l4">
+          <p><i class="material-icons medium">place</i> Volcán # 632, Secc. Monumental, Playas de Tijuana, Tijuana, B.C., México</p>
+          <p><i class="material-icons medium">phone</i> Tel. (664) 630.05.90 | info@pfea.org</p>
+          <p><i class="material-icons medium">mail</i> info@pfea.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 PFEA A.C.
+      </div>
+    </div>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+  <script type="text/javascript" src="static/js/pfea-script.js"></script>
+  <script type="text/javascript" src="static/js/moment.min.js"></script>
+  <script type="text/javascript" src="static/js/fullcalendar.js"></script>
+  <script type="text/javascript" src="static/js/gcal.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

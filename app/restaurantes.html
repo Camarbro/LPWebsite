@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="static/icons/material-design/iconfont/material-icons.css">
+  <link type="text/css" rel="stylesheet" href="static/css/materialize/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/calendar/fullcalendar.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.colors.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.footer.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.icons.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.images.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.navbar.css" media="screen,project"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.parallax.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="static/css/pfea/pfea.widgets.css" media="screen,projection"/>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <nav class="pfea-white">
+  <div class="nav-wrapper container">
+    <!-- Navbar -->
+    <a href="" class="brand-logo"><img class="logo small" src="static/images/pfea_logo-2.png"></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#!view1">Inicio</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="quienes-somos-dropdown">
+          Quiénes somos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="programas-dropdown">
+          Programas
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+      <li><a href="">Eventos</a></li>
+      <li>
+        <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="apoyanos-dropdown">
+          Apóyanos
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- SideNav -->
+    <ul class="side-nav" id="mobile-demo">
+      <!-- Inicio -->
+      <li><a href="">Inicio</a></li>
+      <!-- Quienes somos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Quiénes somos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="about.html">Misión, Visión y Principios</a></li>
+            <li><a href="">Mensaje de la Dirección</a></li>
+            <li><a href="">Logros</a></li>
+            <li><a href="">Reconocimientos y Certificaciones</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Proramas -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Programas
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Restaurantes Amigos del Mar</a></li>
+            <li><a href="">Tijuana Waterkeeper</a></li>
+            <li><a href="">Corredores Ecológicos</a></li>
+              <li><a href="">Salvemos la Playa</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+      <!-- Eventos -->
+      <li><a href="">Eventos</a></li>
+      <!-- Apoyanos -->
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion"><li>
+        <a class="collapsible-header">
+          Apóyanos
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li><a href="">Donativos</a></li>
+            <li><a href="">Voluntarios</a></li>
+          </ul>
+        </div>
+        </li></ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul id="quienes-somos-dropdown" class="dropdown-content">
+  <li><a href="about.html">Misión, Visión y Principios</a></li>
+  <li><a href="notasdir.html">Mensaje de la Dirección</a></li>
+  <li><a href="">Logros</a></li>
+  <li><a href="">Reconocimientos y Certificaciones</a></li>
+</ul>
+
+<ul id="programas-dropdown" class="dropdown-content">
+  <li><a href="">Restaurantes Amigos del Mar</a></li>
+  <li><a href="">Tijuana Waterkeeper</a></li>
+  <li><a href="">Corredores Ecológicos</a></li>
+    <li><a href="">Salvemos la Playa</a></li>
+</ul>
+
+<ul id="apoyanos-dropdown" class="dropdown-content">
+  <li><a href="">Donativos</a></li>
+  <li><a href="">Voluntarios</a></li>
+</ul>
+<!-- Parallax -->
+<div class="parallax-container custom no-margin">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/Lanzamiento_RestauranteAmigoDelMar_PFEA.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="text-container small valign-wrapper">
+                        <h3 class="center-block center">Restaurantes Amigos del Mar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-orange"></div>
+</div>
+
+<!-- Que es -->
+<div class="container default-margin">
+    <div class="row">
+        <div class="col m12">
+            <h3>¿Qué es?</h3>
+            <div class="divider"></div>
+            <br>
+            <div class="row">
+                <div class="col m4">
+                    <div class="row">
+                        <img class="logo mid" src="static/images/R.A.M._Logo-01.png">
+                    </div>
+                </div>
+                <div class="col m8">
+                    <div class="row">
+                        <h4>El Programa de Certificación</h4>
+                    </div>
+                    <div class="row">
+                        <h4>Restaurante Amigo del Mar</h4>
+                    </div>
+                    <div class="row">
+                        <h5>Trabajamos con restaurantes locales para reducir la cantidad de desechables de plástico que usan en su servicio, así como los residuos producidos a consecuencia, que están contaminando nuestras playas y el océano.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="parallax-container custom no-margin">
+    <div class="parallax-content">
+        <div class="parallax"><img src="static/images/lumina-cafe.jpg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="text-container medium">
+                        <p class="title">¿Cómo convertirse en Restaurante Amigo del Mar?</p>
+                        <p class="content">Los restaurantes se comprometen a adoptar voluntariamente prácticas que reducen la generación de desechables de plástico de un solo uso,  principales contaminantes de playas y el océano.</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-title left-align pfea-green"></div>
+</div>
+
+<div class="container default-margin">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h3>¿Cómo funciona?</h3>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Eliminar el uso de desechables para servicio dentro del restaurante, utilizando sólo platos, vasos y cubiertos reutilizables.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Aplicar mejores prácticas de separación y disposición de residuos reciclables.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Proveer popotes sólo a petición del cliente.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Eliminar el uso de recipientes de unicel en servicios para llevar y reemplazarlos por otros materiales reciclados, reciclables, compostables o biodegradables.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Reemplazar las bolsas de plástico por bolsas reutilizables y/o compostables o biodegradables en los servicios para llevar.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Proveer bolsas y utensilios desechables sólo a petición del cliente en servicios para llevar.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Eliminar la venta de bebidas preparadas en botellas de plástico.</p>
+            <p><i class="material-icons smaller pfea-green-text">send</i> Servir agua natural embotellada sólo a petición del cliente.</p>
+            <p><i class="material-icons smaller pfea-orange-text">send</i> Ofrecer un programa de incentivos para clientes que lleven sus propias bolsas, tazas, y recipientes reutilizables.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h3>Beneficios</h3>
+            <div class="divider"></div>
+            <h5>Los restaurantes que se certifiquen como Restaurante Amigo del Mar, recibirán los siguientes beneficios:</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m4 l4">
+            <img class="logo mid center-block center" src="static/images/RAM_Bajale-02.png">
+        </div>
+        <div class="col s12 m8 l8">
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Promoción a más de 5,000 consumidores a través de los canales de comunicación y eventos de PFEA (incluyendo las campañas de limpieza bianuales de Salvemos La Playa).</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Promoción a más de 30,000 consumidores de San Diego a través de los canales de comunicación de Surfrider Foundation San Diego (redes sociales, pagina web, envíos masivos de email y eventos comunitarios)</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Promoción a más de 50,000 consumidores en los canales de comunicación de aliados del Programa Restaurantes Amigos del Mar como CANIRAC, Dirección de Protección al Ambiente, Delegación Playas de Tijuana, WasteLab AC, Pura Kai.</p>
+            <!-- <p><i class="material-icons smaller pfea-blue-text">send</i> Materiales informativos y de promoción para uso dentro del restaurante.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Diseños para la producción de piezas adicionales de promoción.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Entrenamiento de personal del restaurante sobre mejores prácticas requeridas por la certificación.</p>
+            <p><i class="material-icons smaller pfea-blue-text">send</i> Tambos para el acopio de materiales reciclables y servicio de recolección semanal gratuito.</p> -->
+        </div>
+    </div>
+</div>
+
+<div class="container default-margin default-padding">
+    <div class="row center">
+        <div class="col m12">
+            <img src="static/images/ProcesoCertificacion-1024x480.png" style="width: 100%;">
+        </div>
+    </div>
+</div>
+
+<div class="container default-margin default-padding">
+    <div class="row center">
+        <div class="col m12">
+            <img src="static/images/RAM_problematica-01.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+  <footer class="page-footer pfea-blue white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4 l4 center">
+          <img src="static/images/pfea_wh.png">
+        </div>
+        <div class="col s12 m4 l4">
+          <form action="" method="GET">
+            <div class="input-field">
+              <input placeholder="Nombre" type="text">
+            </div>
+            <div class="input-field">
+              <input placeholder="Correo electrónico" type="text">
+            </div>
+            <div class="input-field">
+              <textarea placeholder="Mensaje" class="materialize-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn col s12 white black-text">Enviar</button>
+          </form>
+        </div>
+        <div class="col s12 m4 l4">
+          <p><i class="material-icons medium">place</i> Volcán # 632, Secc. Monumental, Playas de Tijuana, Tijuana, B.C., México</p>
+          <p><i class="material-icons medium">phone</i> Tel. (664) 630.05.90 | info@pfea.org</p>
+          <p><i class="material-icons medium">mail</i> info@pfea.org</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2016 PFEA A.C.
+      </div>
+    </div>
+  </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script type="text/javascript" src="static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+  <script type="text/javascript" src="static/js/pfea-script.js"></script>
+  <script type="text/javascript" src="static/js/moment.min.js"></script>
+  <script type="text/javascript" src="static/js/fullcalendar.js"></script>
+  <script type="text/javascript" src="static/js/gcal.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
